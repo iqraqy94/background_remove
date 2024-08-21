@@ -1,0 +1,47 @@
+/* natbarstyle.css */
+
+/* إعدادات أساسية لشريط التنقل */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333; /* لون الخلفية */
+    color: #fff; /* لون النص */
+    padding: 10px 20px; /* المسافة حول شريط التنقل */
+    position: fixed; /* تثبيت شريط التنقل في أعلى الصفحة */
+    width: 100%; /* عرض كامل الصفحة */
+    top: 0; /* تعيينه في أعلى الصفحة */
+    left: 0;
+    z-index: 1000; /* التأكد من ظهور الشريط فوق المحتوى */
+}
+
+.navbar-nav {
+    list-style-type: none; /* إزالة النقاط من العناصر */
+    margin: 0;
+    padding: 0;
+    display: flex; /* عرض العناصر بشكل أفقي */
+    justify-content: center; /* توسيط العناصر */
+}
+
+.nav-item {
+    margin: 0 15px; /* المسافة بين العناصر */
+}
+
+.nav-item a {
+    color: #fff; /* لون النص */
+    text-decoration: none; /* إزالة التسطير */
+    font-size: 16px; /* حجم الخط */
+    transition: color 0.3s; /* تأثير التغيير اللوني */
+}
+
+.nav-item a:hover {
+    color: #ddd; /* لون النص عند المرور فوقه */
+}
+
+/* إضافة بعض المسافة أعلى المحتوى لتجنب التداخل مع شريط التنقل */
+.container {
+    margin-top: 60px; /* تغيير القيمة حسب ارتفاع شريط التنقل */
+}
